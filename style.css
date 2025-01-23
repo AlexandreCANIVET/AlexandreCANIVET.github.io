@@ -1,0 +1,315 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(./assets/font/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto, sans-serif;
+}
+p{
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.btn {
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    background: none;
+    outline: none;
+    border: 1px solid rgba(128, 128, 128, 0.520);
+    color: rgba(129, 129, 131);
+    padding: 15px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    max-width: 180px;
+    width: 30%;
+    min-width: 160px;
+    transition: 0.3s ease;
+    position: relative;
+}
+.btn:hover{
+    border: 1px solid goldenrod;
+    color: goldenrod;
+   
+}
+.btn > i{
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    transition: 0.3s ease;
+    opacity: 0;
+    color: goldenrod;
+}
+header .btn:hover > i{
+    transform: translateX(-15px);
+}
+.btn:hover > i{
+    transform: translateX(-18px);
+    opacity: 1;
+}
+
+header{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.header-left-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-box-container{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+h1{
+    font-weight: 200;
+    font-size: 3rem;
+    
+}
+.header-right-part{
+    background: url(./assets/img/banner.jpg) right/cover;
+}
+.section2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.section2-left-part{
+    background: url(./assets/img/img-left.jpg) center/cover;
+}
+.section2-right-part{
+    position: relative;
+}
+.section2-right-part::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: rgba(184, 184, 184, 0.5);
+    width: 100%;
+}
+.box-container{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0 auto;
+    padding: 80px 0;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 200;
+}
+.section3{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.section3-left-part{
+    position: relative;
+}
+.section3-left-part::before, .section3-left-part::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: rgba(184, 184, 184, 0.5);
+    width: 100%;
+}
+.section3-right-part{
+    background: url(./assets/img/img-right.jpg) center/cover;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 auto;
+    align-items: center;
+}
+.form-section{
+    max-width: 700px;
+    width: 60%;
+}
+footer h2{
+    text-align: center;
+    padding-top: 80px;
+}
+form{
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    padding: 20px 0;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "labelName labelEmail"
+    "inputName inputEmail"
+    "labelMsg labelMsg"
+    "txta txta"
+    "txta txta"
+    "txta txta"
+    "btnSubmit btnSubmit";
+}
+input[type="text"]{
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    font-family: Roboto, sans-serif;
+    border: 2px solid rgba(184, 184, 184, 0.5);
+    
+}
+input[type="text"]:focus {
+    border: 2px solid goldenrod;
+}
+input[type="text"]:focus + label{
+    color: goldenrod;
+}
+input[name="username"]{
+    grid-area: inputName;
+}
+input[name="email"]{
+    grid-area: inputEmail;
+}
+label{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: rgba(129, 129, 131);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+}
+label[for="username"]{
+    grid-area: labelName;
+}
+label[for="email"]{
+    grid-area: labelEmail;
+}
+label[for="message"]{
+    grid-area: labelMsg;
+}
+textarea{
+    grid-area: txta;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Roboto, sans-serif;
+    border: 2px solid rgba(184, 184, 184, 0.5);
+    outline: none;
+    margin-bottom: 20px;
+}
+textarea:focus{
+    border: 2px solid goldenrod;
+}
+textarea:focus + label[for="message"]{
+    color: goldenrod;
+}
+button[type="submit"]{
+    grid-area: btnSubmit;
+    margin: 0 auto;
+    
+}
+.social-network{
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+}
+.social-network::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: rgba(128, 128, 128, 0.520);
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+ul li{
+    padding: 10px;
+  
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgba(184, 184, 184, 0.5);
+    border-radius: 100%;
+    padding: 11px;
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    display: inline-flex;
+    
+}
+ul li a:hover{
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    transform: scale(1.1);
+    
+}
+ul i{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 575px){
+    header{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 100%;
+    }
+    .section2 , .section3{
+        display: block;
+    }
+    .box-container{
+        padding: 30px 0;
+    }
+    .form-section{
+        width: 90%;
+    }
+    footer h2{
+        padding-top: 30px;
+    }
+    ul{
+        width: 90%;
+        flex-wrap: wrap;
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .header-box-container{
+        padding: 30px 0;
+    }
+    form{
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "labelName"
+        "inputName"
+        "labelEmail"
+        "inputEmail"
+        "labelMsg"
+        "txta"
+        "txta"
+        "txta"
+        "btnSubmit";
+    }
+}

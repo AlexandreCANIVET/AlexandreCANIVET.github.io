@@ -8,6 +8,9 @@
 }
 html {
   scroll-behavior: smooth;
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  overflow-x: hidden;
 }
 
 * {
@@ -72,7 +75,8 @@ body {
 }
 
 header {
-  min-height: 100dvh;
+  height: 100dvh;
+  min-height: 50dvh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,6 +87,11 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
+}
+@media (orientation: landscape) {
+  header {
+    height: 100vh;
+  }
 }
 header .container {
   max-width: 80%;

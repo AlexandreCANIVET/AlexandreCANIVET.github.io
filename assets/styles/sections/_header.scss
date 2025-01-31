@@ -1,9 +1,14 @@
 header{
-    min-height: 100dvh;
+    height: 100dvh;
+    min-height: 50dvh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+
+    @media (orientation: landscape) {
+          height: 100vh;      
+      }
 
     .container{
         max-width: 80%;

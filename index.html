@@ -1,77 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP 3 Integration Run</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TP 4 - Intégration : La Montagne</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/index.css">
 </head>
 
 <body>
+
     <header>
-        <div class="header-left-part">
-            <div class="header-box-container">
-                <h1>Run</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, esse unde! Rerum ipsum ut minima,
-                    magni nobis aperiam exercitationem perspiciatis!</p>
-                <button class="btn">Get Started <i class="fa-solid fa-chevron-right"></i></button>
+        <div class="flexbox-container">
+            <div class="container">
+                <h1>La montagne ça vous gagne</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit quae earum laudantium iste
+                    ipsum?</p>
+                <a href="#main">
+                    <i class="fa-solid fa-arrow-down"></i>
+                </a>
+
+                <nav>
+                    <div class="navbar-left">
+                        <ul>
+                            <li>This is massively</li>
+                            <li>Generic Page</li>
+                            <li>Elements Reference</li>
+                        </ul>
+                    </div>
+                    <div class="navbar-right">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-        <div class="header-right-part"></div>
     </header>
-    <section class="section2">
-        <div class="section2-left-part"></div>
-        <div class="section2-right-part">
-            <div class="box-container">
-                <h2>Magna etiam feugiat</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quam est natus. Aut ad sed
-                    perferendis ipsum saepe error magnam incidunt, maxime, aperiam voluptatibus esse libero sequi
-                    cupiditate! Nam exercitationem praesentium accusamus nihil iure quidem ex cumque, sed quam dolorum
-                    fugit facilis, expedita ipsam tenetur!</p>
-                <button class="btn">Learn more <i class="fa-solid fa-chevron-right"></i></button>
+    <main id="main">
+        <div class="flexbox-container">
+            <div class="container">
+                <div class="main-news">
+                    <div class="news">
+                        <h3>April 25, 2017</h3>
+                        <h2>And this is a massive headline</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam adipisci animi amet
+                            laudantium, cum, odit officiis laborum, autem consequuntur soluta eos hic voluptas eaque?
+                        </p>
+                        <div class="img-container">
+                            <img src="./assets/images/pic01.jpg" alt="picture-main-news">
+                        </div>
+                        <a href="#" class="btn">Full story</a>
+                    </div>
+                </div>
+                <div class="other-news">
+                    <div class="news">
+                        <h5>April 24, 2017</h5>
+                        <h4>Sed magna ipsum faucibus</h4>
+                        <div class="img-container">
+                            <img src="./assets/images/pic02.jpg" alt="picture-news-2">
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi soluta molestias doloremque
+                            numquam aliquid tempora neque porro voluptatibus. Voluptate, at.</p>
+                        <a href="#" class="btn">Full story</a>
+                    </div>
+                    <div class="news">
+                        <h5>April 22, 2017</h5>
+                        <h4>Primis eget imperdiet lorem</h4>
+                        <div class="img-container">
+                            <img src="./assets/images/pic03.jpg" alt=picture-news-3">
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ad delectus aliquam
+                            reprehenderit alias tempora neque quas maxime eum excepturi?</p>
+                        <a href="#" class="btn">Full story</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <section class="section3">
-        <div class="section3-left-part">
-            <div class="box-container">
-                <h2>Tempus adipiscing</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis, atque, nihil excepturi rem
-                    molestiae nostrum, facilis officia cumque aliquid at. Minima qui maiores quam tempora sequi autem,
-                    quas, animi provident est culpa dolorum ipsum iste magnam sunt consequuntur cum aspernatur quaerat
-                    minus! Commodi, cum?</p>
-                <button class="btn">Learn More <i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-        </div>
-        <div class="section3-right-part"></div>
-    </section>
+    </main>
     <footer>
-        <div class="form-section">
-            <h2>Get in touch</h2>
-            <div class="form-container">
-                <form action="">
-                    <input type="text" id="username" name="username">
-                    <label for="username">Name</label>
-                    <input type="text" id="email" name="email">
-                    <label for="email">Email</label>
-                    <textarea id="message"></textarea>
-                    <label for="message">Message</label>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+        <div class="flexbox-container">
+            <div class="container">
+                <div class="footer-left">
+
+                    <form action="#">
+
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" autocomplete="none">
+
+
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+
+                </div>
+                <div class="footer-right">
+                    <div class="box-container">
+                        <h6 class="titleH6">Adress</h6>
+                        <div class="text-container">
+                            <p>1234 Somewhere Road #87257</p>
+                            <p>Nashville, TN 00000-0000</p>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <h6>Phone</h6>
+                        <div class="text-container">
+                            <p>(000) 000-0000</p>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <h6>Email</h6>
+                        <div class="text-container">
+                            <p>info@untitled.ltd</p>
+                        </div>
+                    </div>
+                    <div class="box-container">
+                        <h6>Social</h6>
+                        <div class="social-icon">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="social-network">
-            <ul>
-                <li><a href="https://x.com/?lang=fr"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="https://www.facebook.com/?locale=fr_FR"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://fr.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="mailto:adresse@example.com"><i class="fa-solid fa-envelope"></i></a></li>
-            </ul>
         </div>
     </footer>
 </body>

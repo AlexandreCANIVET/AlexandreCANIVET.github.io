@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+    
+}
+@font-face {
+    font-family: "Merryweather";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
+$black: rgb(0, 0, 0);
+$white: rgb(243, 243, 243);
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    p{  
+        
+        line-height: 40px;
+        font-family: Merryweather, sans-serif;
+        
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+body {
+    background: url(../images/bg.jpg) fixed center/cover;
+    font-family: Inter, sans-serif;
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+
+.flexbox-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: $black;
+    border: 2px solid $black;
+    letter-spacing: 1px;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 180px;
+    margin: 0 auto;
+    &:hover{
+        background: $black;
+        color: $white;
+    }
+    @media screen and (max-width: 650px){
+        width: 80%;
+        min-width: 160px;
+        max-width: 260px;
+    }
+}

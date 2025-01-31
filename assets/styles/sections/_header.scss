@@ -6,9 +6,10 @@ header{
     justify-content: center;
     position: relative;
 
-    @media (orientation: landscape) {
-          height: 100vh;      
-      }
+    @media (max-width: 900px) and (orientation: landscape){
+        // min-height: 730px;
+        height: 730px;
+    }
 
     .container{
         max-width: 80%;

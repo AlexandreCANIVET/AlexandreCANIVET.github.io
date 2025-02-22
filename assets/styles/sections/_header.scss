@@ -1,7 +1,7 @@
 header{
     background: url(../img/bg-slider-06.jpg) center/cover;
-    height: 100dvh;
-    min-height: 100svh;
+    height: calc(var(--vh, 1vh) * 100);
+    
     position: relative;
     text-align: center;
     @include center;

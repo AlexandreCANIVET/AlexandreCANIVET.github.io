@@ -4,172 +4,322 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TP 4 - Intégration : La Montagne</title>
+    <title>Le Resto - Restaurant Gastronomique du Chef Russel Stephens</title>
+    <link rel="shortcut icon" href="./assets/img/ic-plate-big.png">
+    <link rel="stylesheet" href="./assets/styles/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/styles/index.css">
 </head>
 
 <body>
-
     <header>
-        <div class="flexbox-container">
-            <div class="container">
-                <h1>La montagne ça vous gagne</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At reprehenderit quae earum laudantium iste
-                    ipsum?</p>
-                <a href="#main">
-                    <i class="fa-solid fa-arrow-down"></i>
-                </a>
-
-                <nav>
-                    <div class="navbar-left">
-                        <ul>
-                            <li>This is massively</li>
-                            <li>Generic Page</li>
-                            <li>Elements Reference</li>
-                        </ul>
-                    </div>
-                    <div class="navbar-right">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fa-brands fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa-brands fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+        <nav>
+            <h2>Resto</h2>
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="navbar-social-networks">
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-container">
+            <h1 class="title">
+                <span>Welcome to</span>
+                <br>
+                <span>The Resto</span>
+            </h1>
+            <img src="./assets/img/ic-plate-big.png" alt="icon">
+            <p>We serve only the freshest ingredients !</p>
         </div>
     </header>
-    <main id="main">
-        <div class="flexbox-container">
-            <div class="container">
-                <div class="main-news">
-                    <div class="news">
-                        <h3>April 25, 2017</h3>
-                        <h2>And this is a massive headline</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi numquam adipisci animi amet
-                            laudantium, cum, odit officiis laborum, autem consequuntur soluta eos hic voluptas eaque?
-                        </p>
-                        <div class="img-container">
-                            <img src="./assets/images/pic01.jpg" alt="picture-main-news">
+    <section class="discover">
+        <div class="left-part">
+            <div class="left-part-container">
+                <h3 class="title">
+                    <span>Discover</span>
+                    <br>
+                    <span>Our store</span>
+                </h3>
+                <img src="./assets/img/ic-plate.png" alt="icon">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet dolore reprehenderit
+                    commodi animi assumenda laudantium pariatur repellendus earum distinctio, corrupti voluptas nam
+                    officia illo! Necessitatibus provident reiciendis, velit id soluta ipsam illo odit. Error?
+                </p>
+                <div>
+                    <img src="./assets/img/avatar-01.jpg" alt="Russel-Stephens" id="chef-cook">
+                    <h4>Russel Stephens</h4>
+                    <h6>Chef cook</h6>
+                </div>
+            </div>
+        </div>
+        <div class="right-part"></div>
+    </section>
+    <main>
+        <div class="main-container">
+            <h3 class="title"><span>Discover</span></h3>
+            <img src="./assets/img/ic-plate.png" alt="icon">
+            <ul>
+                <li>Breakfast</li>
+                <li>Lunch</li>
+                <li>Dinner</li>
+                <li>Drinks</li>
+                <li>Other</li>
+            </ul>
+            <div class="item-container">
+                <div class="item">
+                    <img src="./assets/img/dish-item-01.jpg" alt="dish-item-01">
+                    <div class="item-text">
+                        <p class="dish">Italian Source Mushroom</p>
+                        <p class="ingredients"> Mushroom / Garlic /<br>Veggies</p>
+                    </div>
+                    <p class="price">$12</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/dish-item-02.jpg" alt="dish-item-02">
+                    <div class="item-text">
+                        <p class="dish">Fried Potatoes with garlic</p>
+                        <p class="ingredients">Potatoes / Olive Oil / Garlic</p>
+                    </div>
+                    <p class="price">$22</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/dish-item-03.jpg" alt="dish-item-03">
+                    <div class="item-text">
+                        <p class="dish">Tenu Roast Source</p>
+                        <p class="ingredients">Tuna / Potatoes / Rice</p>
+                    </div>
+                    <p class="price">$15</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/dish-item-04.jpg" alt="dish-item-04">
+                    <div class="item-text">
+                        <p class="dish">Roast Pork (4 sticks)</p>
+                        <p class="ingredients">Pork / Veggies / Shoyu</p>
+                    </div>
+                    <p class="price">$18</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/dish-item-05.jpg" alt="dish-item-05">
+                    <div class="item-text">
+                        <p class="dish">Salted fried chicken</p>
+                        <p class="ingredients">Chicken / Olive Oil / Salt</p>
+                    </div>
+                    <p class="price">$20</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/dish-item-06.jpg" alt="dish-item-06">
+                    <div class="menu-text">
+                        <p class="dish">Crab with curry sources</p>
+                        <p class="ingredients">Crab / Potatoes / Rice</p>
+                    </div>
+                    <p class="price">$14</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/dish-item-07.jpg" alt="dish-item-07">
+                    <div class="menu-text">
+                        <p class="dish">Imported salmon steak</p>
+                        <p class="ingredients">Salmon / Veggies / Oil</p>
+                    </div>
+                    <p class="price">$16</p>
+                </div>
+                <div class="item">
+                    <img src="./assets/img/dish-item-08.jpg" alt="dish-item-08">
+                    <div class="item-text">
+                        <p class="dish">Baked Potato pizza</p>
+                        <p class="ingredients">Potato / Bread / Cheese</p>
+                    </div>
+                    <p class="price">$25</p>
+                </div>
+            </div>
+        </div>
+        <div class="background-container"></div>
+    </main>
+    <section class="online-booking">
+        <div class="left-part">
+            <div class="left-part-container">
+                <h3 class="title">
+                    <span>Time</span>
+                    <br>
+                    <span>Open</span>
+                </h3>
+                <img src="./assets/img/ic-plate.png" alt="icon">
+                <div>
+                    <h5>Monday - Friday</h5>
+                    <p>7AM-11AM (Breakfast)</p>
+                    <p>11PM-10PM (Lunch/Dinner)</p>
+                </div>
+                <div>
+                    <h5>Saturday / Sunday</h5>
+                    <p>8AM-1PM (Brunch)</p>
+                    <p>1PM-9PM (Lunch/Dinner)</p>
+                </div>
+                <h5>+15 890 979 25 52</h5>
+            </div>
+        </div>
+        <div class="right-part">
+            <div class="right-part-container">
+                <h3 class="title">
+                    <span>Reservation</span>
+                    <br>
+                    <span>Online Booking</span>
+                </h3>
+                <img src="./assets/img/ic-plate.png" alt="icon">
+                <form>
+                    <div class="form-container">
+                        <select required>
+                            <option value="" disabled selected>People</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                        </select>
+                        <input type="date" min="2025-01-01" value="2025-01-01">
+                        <input type="time">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Phone">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="event">
+        <div class="event-container">
+            <h3 class="title">
+                <span>Upcoming</span>
+                <br>
+                <span>Our event</span>
+            </h3>
+            <img src="./assets/img/ic-plate.png" alt="icon">
+            <div class="news">
+                <div class="news-left-part">
+                    <div class="new">
+                        <div class="left-new">
+                            <div class="container">
+                                <p>08</p>
+                                <p>July</p>
+                            </div>
                         </div>
-                        <a href="#" class="btn">Full story</a>
+                        <div class="right-new">
+                            <div class="container">
+                                <h5>Night inspirescu Party</h5>
+                                <p class="date"><i class="fa-solid fa-location-dot"></i> Restaurant Resto <i
+                                        class="fa-regular fa-clock"></i> 10:00pm - 6:00am</p>
+                                <a href="#">Buy tickets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new">
+                        <div class="left-new">
+                            <div class="container">
+                                <p>08</p>
+                                <p>July</p>
+                            </div>
+                        </div>
+                        <div class="right-new">
+                            <div class="container">
+                                <h5>DJ RobagRuhme</h5>
+                                <p class="date"><i class="fa-solid fa-location-dot"></i> Restaurant Resto <i
+                                        class="fa-regular fa-clock"></i> 10:00pm - 6:00am</p>
+                                <a href="#">Buy tickets</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="other-news">
-                    <div class="news">
-                        <h5>April 24, 2017</h5>
-                        <h4>Sed magna ipsum faucibus</h4>
-                        <div class="img-container">
-                            <img src="./assets/images/pic02.jpg" alt="picture-news-2">
+                <div class="news-right-part">
+                    <div class="right-new-container">
+                        <div class="span-container">
+                            <p>08</p>
+                            <p>July</p>
                         </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi soluta molestias doloremque
-                            numquam aliquid tempora neque porro voluptatibus. Voluptate, at.</p>
-                        <a href="#" class="btn">Full story</a>
-                    </div>
-                    <div class="news">
-                        <h5>April 22, 2017</h5>
-                        <h4>Primis eget imperdiet lorem</h4>
-                        <div class="img-container">
-                            <img src="./assets/images/pic03.jpg" alt=picture-news-3">
-                        </div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam ad delectus aliquam
-                            reprehenderit alias tempora neque quas maxime eum excepturi?</p>
-                        <a href="#" class="btn">Full story</a>
+                        <h5>Thousands celebrities at<br>Johnnie Night</h5>
+                        <p class="date"><i class="fa-solid fa-location-dot"></i> Restaurant Resto <i
+                                class="fa-regular fa-clock"></i>
+                            10:00pm - 6:00am</p>
+                        <a href="#">Buy tickets</a>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
+    <section class="testimony">
+        <div class="container">
+            <img src="./assets/img/avatar-02.jpg" alt="avatar-02">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti tenetur pariatur doloribus
+                atque
+                aliquam cupiditate mollitia, itaque quis officiis porro facere quam nulla explicabo? Laborum itaque
+                aliquid omnis quidem iusto illum saepe, quod, quia modi quas optio at, ducimus dolores.</p>
+            <h4>Russel Stepehns</h4>
+            <h6>CEO - HeadPassion</h6>
+        </div>
+        <div class="background-container"></div>
+    </section>
     <footer>
-        <div class="flexbox-container">
-            <div class="container">
-                <div class="footer-left">
+        <div class="footer-container">
 
-                    <form action="#">
+            <div class="footer-left">
 
-                        <label for="name">Name</label>
-                        <input type="text" id="name">
+                <h3 class="title"><span>Resto</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam praesentium mollitia voluptates,
+                    voluptatem aspernatur laudantium esse, veritatis temporibus culpa impedit et deserunt, ducimus
+                    alias
+                    officiis?</p>
 
-
-                        <label for="email">Email</label>
-                        <input type="text" id="email" autocomplete="none">
-
-
-                        <label for="message">Message</label>
-                        <textarea id="message"></textarea>
-
-                        <button type="submit">Send Message</button>
-                    </form>
-
+            </div>
+            <div class="footer-right">
+                <div class="newsletter">
+                    <label for="email" class="footer-title">Newsletter</label>
+                    <input type="email" id="email" placeholder="Your email adress">
                 </div>
-                <div class="footer-right">
-                    <div class="box-container">
-                        <h6 class="titleH6">Adress</h6>
-                        <div class="text-container">
-                            <p>1234 Somewhere Road #87257</p>
-                            <p>Nashville, TN 00000-0000</p>
-                        </div>
-                    </div>
-                    <div class="box-container">
-                        <h6>Phone</h6>
-                        <div class="text-container">
-                            <p>(000) 000-0000</p>
-                        </div>
-                    </div>
-                    <div class="box-container">
-                        <h6>Email</h6>
-                        <div class="text-container">
-                            <p>info@untitled.ltd</p>
-                        </div>
-                    </div>
-                    <div class="box-container">
-                        <h6>Social</h6>
-                        <div class="social-icon">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="follow">
+                    <h6 class="footer-title">Follow us:</h6>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-pinterest"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </footer>

@@ -1,2 +1,3 @@
-Inter-ExtraBold
-MerriweatherLight
+Allura Regular
+Poppins Medium
+Roboto Light

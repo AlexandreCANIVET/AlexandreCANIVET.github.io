@@ -1,20 +1,28 @@
 @font-face {
-    font-family: "Inter";
-    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
-    
+    font-family: "Allura";
+    src: url(../fonts/Allura/Allura-Regular.ttf);
 }
 @font-face {
-    font-family: "Merryweather";
-    src: url(../fonts/Merriweather-Light.ttf);
+    font-family: "Poppins";
+    src: url(../fonts/Poppins/Poppins-Medium.ttf);
 }
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+$font1: Allura, sans-serif;
+$font2: Poppins, serif;
+$font3: Roboto, cursive;
 
-$black: rgb(0, 0, 0);
-$white: rgb(243, 243, 243);
+$black1: rgb(32,32,32);
+$white1:rgb(238,238,238);
 
-html{
-    scroll-behavior: smooth;
-    overscroll-behavior: none;
-    overflow-x: hidden;
+$color1: rgb(166, 114, 69);
+
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 *{
@@ -22,64 +30,47 @@ html{
     margin: 0;
     box-sizing: border-box;
 
-    p{  
-        
-        line-height: 40px;
-        font-family: Merryweather, sans-serif;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    a {
-        text-decoration: none;
+    &::selection{
+        background: $color1;
+        color: $white1;
     }
 }
 
-body {
-    // background: url(../images/bg.jpg) fixed center/cover;
-    font-family: Inter, sans-serif;
-    max-width: 1400px;
-    margin: 0 auto;
-    &::before{
-        content: "";
-        display: block;
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -10;
-        background: url(../images/bg.jpg) fixed center/cover;
-    }
-   
+body{
+   background: $black1;
+   color: $white1;
+   font-family: $font3;
 }
 
-.flexbox-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.title{
+    text-align: center;
+    >span:nth-child(1){
+       font-family: Allura;
+       color: $color1;
+    }
+    >span:nth-child(3){
+        text-transform: uppercase;
+        font-family: $font2;
+    }
 }
 
-.btn{
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    color: $black;
-    border: 2px solid $black;
-    letter-spacing: 1px;
-    padding: 10px 25px;
-    font-weight: bold;
-    transition: 0.3s;
-    width: 180px;
-    margin: 0 auto;
-    &:hover{
-        background: $black;
-        color: $white;
+h3{
+    font-size: 1.5rem;
+    line-height: 25px;
+    >span:nth-child(1){
+        font-size: 2rem;
+        font-weight: 400;
     }
-    @media screen and (max-width: 650px){
-        width: 80%;
-        min-width: 160px;
-        max-width: 260px;
+    >span:nth-child(3){
+        letter-spacing: 1px;
     }
+}
+
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: $white1;
 }
